@@ -12,7 +12,7 @@ A simple web app that displays a table of breweries with some of their informati
 +openbrewerydb
 ##WireFrame
 ---
-![Initial wireframe for FindaBrew](https://imgur.com/q8sbalD)
+![Initial wireframe for FindaBrew](https://imgur.com/yFnjZY7)
 
 
 ---
