@@ -6,10 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brewery Search</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+    <script src="https://kit.fontawesome.com/ef037e1fd7.js" crossorigin="anonymous" defer></script>
     <script src="/js/script.js" defer></script>
     <style src="/css/style.css"></style>
 </head>
 <body>
+    <form>
+        <h1 id="titleHeader">FindaBrew</h1>
+        <input type="text" id="inputText" placeholder="Enter city"/>
+        <i class="fa-solid fa-beer-mug-empty"></i>
+    </form>
+    <h3>City</h3>
+    <table>
+        <tr>
+            <th>BREWERY</th>
+            <th>TYPE</th>
+            <th>ADDRESS</th>
+            <th>PHONE</th>
+            <th>WEBSITE</th>
+        </tr>
+        <tr>
+            <td id="brewery">Circle 9 Brewing</td>
+            <td id="type">Micro</td>
+            <td id="city">San Francisco</td>
+            <td id="phone">(858)634-2537</td>
+            <td id="website"><a href="http://www.circle9brewing.com">circle9brewing</a></td>
+        </tr>
+    </table>
     
 </body>
 </html>
