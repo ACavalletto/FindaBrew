@@ -12,7 +12,7 @@ A simple web app that displays a table of breweries with some of their informati
 +openbrewerydb
 ##WireFrame
 ---
-![Imgur](https://imgur.com/yFnjZY7)
+<blockquote class="imgur-embed-pub" lang="en" data-id="yFnjZY7"><a href="https://imgur.com/yFnjZY7">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 
 ---
