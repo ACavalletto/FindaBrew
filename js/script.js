@@ -6,13 +6,18 @@ let $type = $("#type");
 let $address = $("#address");
 let $phone = $("#phone");
 let $website = $("#website");
+let $cityName = $("#cityName");
+// const logoFinder = "https://logo.clearbit.com/"
 
 $("form").on("click", "i", handleGetData);
 
 function handleGetData(e) {
   e.preventDefault();
-
+  if ($("#tableBody").children().length > 0) {
+    $("#tableBody").empty();
+  }
   userInput = $inputCity.val();
+  $cityName.text(userInput);
   userInput = userInput.replace(/\s+/g, "%20");
   //checks userInput for any whitespace and replaces it with URL encoding reference
 
@@ -35,6 +40,6 @@ function render() {
     const $newBrewery = $(
       `<tr><td>${brewerData[i].name}</td><td>${brewerData[i].brewery_type}</td><td>${brewerData[i].street}</td><td>${brewerData[i].phone}</td><td><a href ="${brewerData[i].website_url}">${brewerData[i].name}</a></td></tr>`
     );
-    $("#breweries").append($newBrewery);
+    $("#tableBody").append($newBrewery);
   }
 }
