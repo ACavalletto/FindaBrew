@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brewery Search</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
-    <script src="https://kit.fontawesome.com/ef037e1fd7.js" crossorigin="anonymous" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ef037e1fd7.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="/js/script.js" defer></script>
-    <style src="/css/style.css"></style>
-</head>
-<body>
-    <form>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <form>
         <h1 id="titleHeader">FindaBrew</h1>
-        <input type="text" id="inputText" placeholder="Enter city"/>
+        <input type="text" id="inputText" placeholder="Enter city" />
         <i class="fa-solid fa-beer-mug-empty fa-xl"></i>
-    </form>
-    <h3 id = "cityName"></h3>
-    <table id="breweries">
-        <thead>
-        <tr>
-            <th>BREWERY</th>
-            <th>TYPE</th>
-            <th>ADDRESS</th>
-            <th>PHONE</th>
-            <th>WEBSITE</th>
-        </tr>
-        </thead>
-        <tbody id="tableBody">
-        </tbody>
-    </table>
-    
-</body>
+      </form>
+      <h3 id="cityName"></h3>
+    </header>
+    <div class="cardsWrap"></div>
+  </body>
 </html>
