@@ -13,7 +13,7 @@ function handleGetData(e) {
   e.preventDefault();
   if ($(".cardsWrap").children().length > 0) {
     $(".cardsWrap").empty();
-  }
+  } // Checks to see if grid is already populated with cards and if so clears the existing cards.
   userInput = $inputCity.val();
   $cityName.text(userInput);
   userInput = userInput.replace(/\s+/g, "%20");
@@ -30,7 +30,7 @@ function handleGetData(e) {
         $inputCity.val('');
         $cityName.text('');
         return;
-      }
+      }// Checks for valid input by user and if invalid asks for a new input and clears out incorrectly inputted value
       render();
     },
     (error) => {
@@ -53,14 +53,13 @@ function render() {
       </div>
     </div>`);
     $(".cardsWrap").append(newCard);
-  }
+  }//Iterates through returned data array and builds a card from each object then adds it to the card grid
 }
-
 function checkData(brewerData) {
   if (brewerData.street == null) {
     brewerData.street = '';
   }
   if (brewerData.phone == null) {
     brewerData.phone = '';
-  }
+  }// Checks for null in data pulled from api and does not display if none is provided
 }
