@@ -1,5 +1,4 @@
 let brewerData, userInput;
-
 let $inputCity = $("input[type=text]");
 let $brewery = $(".breweryName");
 let $address = $(".address");
@@ -42,17 +41,26 @@ function handleGetData(e) {
 
 function render() {
   for (let i = 0; i < brewerData.length; i++) {
+    checkData(brewerData[i]);
     const newCard = $(`
     <div class="cardItem">
       <div class ="innerCard"
         <div class = "breweryLogo"><img src = "${logoFinder}+${brewerData[i].website_url}"</div>
         <div class= "breweryName">${brewerData[i].name}</div>
-        <div class= "address">${brewerData[i].address}</div>
+        <div class= "address">${brewerData[i].street}</div>
         <div class = "phone">${brewerData[i].phone}</div>
         <div class = "website"><a href = "${brewerData[i].website_url}">${brewerData[i].name}</a></div>
       </div>
     </div>`);
     $(".cardsWrap").append(newCard);
   }
-  
+}
+
+function checkData(brewerData) {
+  if (brewerData.street == null) {
+    brewerData.street = '';
+  }
+  if (brewerData.phone == null) {
+    brewerData.phone = '';
+  }
 }
