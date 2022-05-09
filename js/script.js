@@ -4,7 +4,6 @@ let $inputCity = $("input[type=text]");
 let $brewery = $(".breweryName");
 let $address = $(".address");
 let $phone = $(".phone");
-let $type = $(".type");
 let $website = $(".website");
 let $cityName = $("#cityName");
 const logoFinder = "https://logo.clearbit.com/"
@@ -27,6 +26,12 @@ function handleGetData(e) {
   }).then(
     (data) => {
       brewerData = data;
+      if (brewerData.length === 0) {
+        alert("Please enter another city")
+        $inputCity.val('');
+        $cityName.text('');
+        return;
+      }
       render();
     },
     (error) => {
@@ -44,7 +49,6 @@ function render() {
         <div class= "breweryName">${brewerData[i].name}</div>
         <div class= "address">${brewerData[i].address}</div>
         <div class = "phone">${brewerData[i].phone}</div>
-        <div class = "type">${brewerData[i].brewery_type}</div>
         <div class = "website"><a href = "${brewerData[i].website_url}">${brewerData[i].name}</a></div>
       </div>
     </div>`);
