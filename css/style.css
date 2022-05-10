@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family: 'Pirata One', cursive;
+    letter-spacing: 3px;
     color: white;
     background-image: url('https://images3.alphacoders.com/276/276637.jpg');
     background-size: cover;
@@ -31,10 +33,19 @@ header input{
 }
 header i{
     color:rgb(244, 193, 8);
+    
 }
 header i:hover{
+    cursor: pointer;
     color:rgb(255, 230, 0);
 }
+h3{
+    margin-top: 15px;
+    font-size: 25px;
+    color:rgb(244, 193, 8);
+
+}
+
 .cardsWrap {
     display: flex;
     flex-wrap: wrap;
@@ -44,8 +55,6 @@ header i:hover{
     align-content:space-between;
     padding: 20px;
     row-gap: 4em;
-    
-
 }
 .cardsWrap .cardItem{
     display:flex;
