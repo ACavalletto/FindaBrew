@@ -44,7 +44,7 @@ function render() {
     checkData(brewerData[i]);
     const newCard = $(`
     <div class="cardItem">
-      <div>class ="innerCard"
+      <div class ="innerCard">
         <div class = "breweryLogo"><img src = "${logoFinder}+${brewerData[i].website_url}"</div>
         <div class= "breweryName">${brewerData[i].name}</div>
         <div class= "address">${brewerData[i].street}</div>
