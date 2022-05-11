@@ -16,6 +16,7 @@ body {
     width: 100vw;
 }
 header{
+    margin-top: 15px;
     text-align: center;
     padding: 2em;
 }
@@ -58,14 +59,19 @@ h3{
 }
 .cardsWrap .cardItem{
     display:flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-content:center;
     background: #4f5573;
     opacity: .9;
     width: 15%;
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
     border: 2px solid black;
     text-align: center;
+}
+.cardsWrap .cardItem img{
+    width: 60%;
+    margin-top: 5px;
 }
 .cardsWrap .cardItem a{
     color:rgb(234, 146, 15);
@@ -73,10 +79,28 @@ h3{
 .cardsWrap .cardItem:hover{
     background: #626990;
 }
+.collapsible {
+    padding: 5px;
+    margin:0 auto;
+    background: rgba(241, 196, 17, 0.907);
+    border-radius: 10px;
+    width: 75%;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+.collapsible:hover {
+    background: rgb(251, 205, 21);
+}
 .cardsWrap .cardItem .innerCard{
+    visibility: collapse;
+    overflow: hidden;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 10px;
 }
+
 @media screen and (max-width: 1024px) {
     .cardsWrap .cardItem{
         width: 33%;
@@ -86,12 +110,17 @@ h3{
 @media screen and (max-width: 768px) {
     .cardsWrap .cardItem{
         width: 45%;
-        height: 250px;
+        height: 350px;
+    }.breweryLogo {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
     }
 }
 
 @media screen and (max-width: 568px) {
     .cardsWrap .cardItem {
         width: 100%;
+        height: 380px;
     }
 }
