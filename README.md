@@ -1,6 +1,6 @@
 # FindaBrew
 ---
-A web app that displays cards of breweries with their information using the openbrewerydb.
+A web application that displays cards of breweries with their information using the openbrewerydb.
 
 ## Technologies Used
 ---
