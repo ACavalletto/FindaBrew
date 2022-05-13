@@ -21,7 +21,7 @@ A web app that displays cards of breweries with their information using the open
 ---
 ## Site Link
 
-https://finadabrew.netlify.app/
++ https://finadabrew.netlify.app/
 ---
 ## Future Enhancements
 ---
