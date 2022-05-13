@@ -29,5 +29,5 @@ A web application that displays cards of breweries with their information using 
 + Map showing pins around area of location of breweries
 + Ability to mark brewery as visited to drop it to bottom of hide it 
 + filter by name,distance(geolocation)
-+ Beers on tap via a webscraper
++ Beers on tap
 + Adding socials to CSS cards
