@@ -13,12 +13,14 @@ A web app that displays cards of breweries with their information using the open
 + openbrewerydb
 + clearbit
 
-## WireFrame
+## Screenshot
 ---
 
 ![Imgur](./Screenshot.png)
 
-
+---
+##Site Link
+https://finadabrew.netlify.app/
 ---
 ## Future Enhancements
 ---
