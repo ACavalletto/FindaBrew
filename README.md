@@ -1,6 +1,6 @@
 # FindaBrew
 ---
-A web app that displays cards of breweries with their information using the openbrewerydb.
+A web application that displays cards of breweries with their information using the openbrewerydb.
 
 ## Technologies Used
 ---
@@ -13,12 +13,15 @@ A web app that displays cards of breweries with their information using the open
 + openbrewerydb
 + clearbit
 
-## WireFrame
+## Screenshot
 ---
 
 ![Imgur](./Screenshot.png)
 
+---
+## Site Link
 
++ https://finadabrew.netlify.app/
 ---
 ## Future Enhancements
 ---
@@ -26,5 +29,5 @@ A web app that displays cards of breweries with their information using the open
 + Map showing pins around area of location of breweries
 + Ability to mark brewery as visited to drop it to bottom of hide it 
 + filter by name,distance(geolocation)
-+ Beers on tap via a webscraper
++ Beers on tap
 + Adding socials to CSS cards
