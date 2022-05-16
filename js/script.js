@@ -44,13 +44,13 @@ function render() {
     checkData(brewerData[i]);
     const newCard = $(`
     <div class="cardItem">
-    <div class = "breweryLogo"><img src = "${logoFinder}+${brewerData[i].website_url}"</div>
+    <div class = "breweryLogo"><img src = "${logoFinder}+${brewerData[i].website_url}"></div>
     <button type="button" class="collapsible">${brewerData[i].name}</button>
       <div class ="innerCard">
         <div class= "breweryName">${brewerData[i].name}</div>
         <div class= "address">${brewerData[i].street}</div>
         <div class = "phone">${brewerData[i].phone}</div>
-        <div class = "website"><a href = "${brewerData[i].website_url} target="_blank">${brewerData[i].websitename}</a></div>
+        <div class = "website"><a href = "${brewerData[i].website_url} target="_blank">${brewerData[i].name}</a></div>
       </div>
     </div>`);
     $(".cardsWrap").append(newCard);
@@ -66,10 +66,10 @@ function checkData(brewerData) {
 }
 
 $(".cardsWrap").on("click", "button", (e) => {
-  let $targetCard = $(e.target).parent()
+  let $targetCard = $(e.target).parent();
   if ($targetCard.children(".innerCard").css("visibility") == "collapse") {
-    $targetCard.children(".innerCard").css("visibility", "visible")
-  }else{
-    $targetCard.children(".innerCard").css("visibility", "collapse")
+    $targetCard.children(".innerCard").css("visibility", "visible");
+  } else {
+    $targetCard.children(".innerCard").css("visibility", "collapse");
   }
-})
+});
